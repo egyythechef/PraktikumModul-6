@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(){
+
+    int baris, kolom;
+    scanf("%d %d", &baris, &kolom);
+    int matriks[baris][kolom];
+    int nilai;
+
+    for (int i=0;i < baris;i++){
+        for(int j=0; j < kolom;j++){
+            scanf("%d", &nilai);
+            matriks[i][j] = nilai;
+            
+        }
+    }
+
+    printf("\n");
+    for (int i=0;i < baris;i++){
+        for(int j=0; j < kolom;j++){
+            printf("%d ", matriks[i][j]);
+            if(j == kolom -1){
+                printf("\n");
+            }
+        }
+    }
+    return 0;
+}
